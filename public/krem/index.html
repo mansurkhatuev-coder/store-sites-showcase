@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff7ec">
+  <meta name="description" content="Торты, десерты и свежая выпечка. Выберите любимое и соберите заказ в WhatsApp.">
+  <title>КРЕМ — кондитерская</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261011-checkout-v1">
+  <script src="app.js?v=20261011-checkout-v1" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="КРЕМ — на главную">
+      <span class="brand-mark" aria-hidden="true">К</span>
+      <span class="brand-name">КРЕМ</span>
+    </a>
+    <nav class="main-nav" aria-label="Главная навигация">
+      <a href="#menu">Меню</a>
+      <a href="#about">О нас</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <button class="header-cart" type="button" data-open-cart>
+      <span>Корзина</span>
+      <span class="header-cart-count" data-cart-count>0</span>
+      <span class="header-cart-total" data-cart-total>0 ₽</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> ТОРТЫ · ДЕСЕРТЫ · ВЫПЕЧКА</p>
+        <h1 id="hero-title">Сладкий повод<br><em>быть рядом</em></h1>
+        <p class="hero-description">Нежные десерты, свежая выпечка и торты для тёплых встреч и маленьких радостей.</p>
+        <a class="hero-link" href="#menu">Выбрать десерт <svg class="hero-link-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M5 5 15 15M7.5 15H15V7.5" /></svg></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-photo hero-photo-main"></div>
+        <div class="hero-photo hero-photo-detail"></div>
+        <div class="hero-seal"><span>К</span><small>СЛАДКИЙ<br>МОМЕНТ</small></div>
+        <span class="hero-vertical">С ЛЮБОВЬЮ К СЛАДКОМУ</span>
+      </div>
+      <div class="hero-index" aria-hidden="true"><span>01</span><span class="index-rule"></span><span>ВЫБЕРИ СВОЮ СЛАДОСТЬ</span></div>
+    </section>
+
+    <section class="menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="menu-shell">
+        <div class="menu-heading">
+          <div>
+            <p class="section-eyebrow">ВЫБОР КРЕМ</p>
+            <h2 id="menu-title">Сладкая витрина<span class="heading-period">.</span></h2>
+          </div>
+          <p class="menu-intro">Выбирайте любимое — бережно приготовим и соберём заказ к вашему столу.</p>
+        </div>
+
+        <div class="menu-tools">
+          <div class="category-list" role="group" aria-label="Категории меню" data-category-list></div>
+          <label class="search-box">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <span class="visually-hidden">Поиск десертов</span>
+            <input type="search" placeholder="Найти десерт" autocomplete="off" data-search>
+            <kbd>⌘ K</kbd>
+          </label>
+        </div>
+
+        <p class="results-label" aria-live="polite" data-results-label></p>
+        <div class="product-grid" data-product-grid></div>
+        <div class="empty-results" data-empty-results hidden>
+          <span aria-hidden="true">✳</span>
+          <h3>Не нашли десерт</h3>
+          <p>Поищите по другому названию или выберите другую категорию.</p>
+        </div>
+        <section class="order-guide" aria-label="Как оформить заказ">
+          <div class="order-guide-title">
+            <p class="section-eyebrow">ВСЁ ПРОСТО</p>
+            <h3>От сладкого выбора<br><em>до заказа</em></h3>
+          </div>
+          <ol class="order-guide-steps">
+            <li><span>01</span><div><strong>Выберите</strong><small>любимые сладости</small></div></li>
+            <li><span>02</span><div><strong>Соберите</strong><small>корзину с десертами</small></div></li>
+            <li><span>03</span><div><strong>Отправьте</strong><small>заказ кондитерской в WhatsApp</small></div></li>
+          </ol>
+          <span class="order-guide-mark" aria-hidden="true">К</span>
+        </section>
+        <p class="sample-note">КРЕМ — временное название для демонстрации. Товары, фото и цены пока предварительные.</p>
+      </div>
+    </section>
+
+    <section class="about-strip" id="about" aria-label="О кондитерской КРЕМ">
+      <span class="about-mark" aria-hidden="true">К</span>
+      <p>Сладкие моменты<br><em>для тёплых встреч.</em></p>
+      <span class="about-caption">КРЕМ · СЛАДОСТЬ РЯДОМ</span>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <a class="brand footer-brand" href="#top" aria-label="КРЕМ — вверх">
+      <span class="brand-mark" aria-hidden="true">К</span>
+      <span class="brand-name">КРЕМ</span>
+    </a>
+    <p>Печём торты, готовим десерты и выпечку для ваших тёплых встреч.</p>
+    <span class="footer-copy">© КРЕМ</span>
+  </footer>
+
+  <button class="floating-cart" type="button" data-open-cart aria-label="Открыть корзину">
+    <span class="floating-cart-icon" aria-hidden="true"><svg viewBox="0 0 20 20" focusable="false"><path d="M10 3.5v13M3.5 10h13" /></svg></span>
+    <span>Мой заказ</span>
+    <span class="floating-cart-count" data-cart-count>0</span>
+    <span class="floating-cart-total" data-cart-total>0 ₽</span>
+  </button>
+
+  <div class="cart-backdrop" data-cart-backdrop hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true" inert>
+    <div class="drawer-header">
+      <div>
+        <p class="section-eyebrow">ВАШ ВЫБОР</p>
+        <h2 id="cart-title">Корзина<span class="heading-period">.</span></h2>
+      </div>
+      <button class="icon-button close-cart" type="button" aria-label="Закрыть корзину" data-close-cart>×</button>
+    </div>
+    <div class="cart-content">
+      <div class="cart-items" data-cart-items></div>
+      <div class="cart-empty" data-cart-empty>
+        <span class="empty-mark" aria-hidden="true">К</span>
+        <h3>Пока пусто</h3>
+        <p>Добавьте десерт из меню — и мы соберём заказ.</p>
+        <button class="text-button" type="button" data-close-cart>Вернуться к меню <span aria-hidden="true">↗</span></button>
+      </div>
+    </div>
+    <div class="drawer-footer">
+      <div class="fulfillment-picker" data-fulfillment hidden>
+        <span class="fulfillment-caption">ПОЛУЧЕНИЕ</span>
+        <div class="fulfillment-options" role="group" aria-label="Способ получения заказа">
+          <button class="fulfillment-option" type="button" data-fulfillment-method="delivery" aria-pressed="false">Доставка</button>
+          <button class="fulfillment-option" type="button" data-fulfillment-method="pickup" aria-pressed="true">Самовывоз</button>
+        </div>
+        <label class="delivery-address" data-delivery-address hidden>
+          <span>Адрес доставки</span>
+          <input type="text" data-delivery-address-input autocomplete="street-address" placeholder="Улица, дом, квартира" maxlength="180" required aria-required="true">
+        </label>
+      </div>
+      <div class="cart-summary"><span>Итого</span><strong data-drawer-total>0 ₽</strong></div>
+      <a class="whatsapp-button is-disabled" data-whatsapp-order aria-disabled="true" href="#order" target="_blank" rel="noopener noreferrer">
+        <span class="whatsapp-icon" aria-hidden="true">↗</span>
+        <span>Заказать в WhatsApp</span>
+      </a>
+      <p class="whatsapp-hint" data-whatsapp-hint>Сообщение с заказом откроется в WhatsApp</p>
+    </div>
+  </aside>
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+</body>
+</html>
