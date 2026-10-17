@@ -171,6 +171,8 @@ h1, h2, h3, p { margin-top: 0; }
 .button--gold { background: var(--gold); color: #16130e; }
 .button--gold:hover { background: var(--gold-light); }
 .button--gold svg { width: 19px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.4; }
+.link-arrow-icon { display: block; width: 14px; height: 14px; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-width: 1.45; stroke-linecap: round; stroke-linejoin: round; transition: transform .25s ease; }
+.text-link:hover .link-arrow-icon, .arrow-link:hover .link-arrow-icon { transform: translate(2px,-2px); }
 .text-link, .arrow-link {
   display: inline-flex;
   align-items: center;
@@ -183,7 +185,7 @@ h1, h2, h3, p { margin-top: 0; }
   transition: color .2s ease;
 }
 .text-link:hover, .arrow-link:hover { color: var(--gold-light); }
-.text-link span, .arrow-link span { color: var(--gold-light); font-size: 17px; }
+.text-link .link-arrow-icon, .arrow-link .link-arrow-icon { color: var(--gold-light); }
 .hero__price-note { margin: 17px 0 0; color: rgba(232, 224, 209, .52); font-size: 10px; letter-spacing: .04em; }
 .hero__signature { position: absolute; right: var(--page-gutter); bottom: 100px; display: flex; align-items: center; gap: 14px; color: rgba(232, 224, 209, .66); font-size: 8px; letter-spacing: .18em; line-height: 1.65; }
 .hero__signature-mark { color: var(--gold-light); font-family: var(--serif); font-size: 45px; letter-spacing: -.19em; }
@@ -237,7 +239,8 @@ h1, h2, h3, p { margin-top: 0; }
 .channel-card__index { color: #9b8868; font-size: 8px; font-weight: 700; letter-spacing: .18em; }
 .channel-card__title { margin-top: 12px; font-family: var(--serif); font-size: clamp(30px, 3vw, 45px); line-height: 1; }
 .channel-card__detail { margin-top: 10px; color: #aaa193; font-size: 10px; }
-.channel-card__arrow { position: absolute; right: 25px; bottom: 22px; color: var(--gold-light); font-size: 20px; transition: transform .25s ease; }
+.channel-card__arrow { position: absolute; right: 25px; bottom: 22px; display: grid; width: 19px; height: 19px; place-items: center; color: var(--gold-light); transition: transform .25s ease; }
+.channel-card__arrow .link-arrow-icon { width: 100%; height: 100%; }
 .channel-card:hover .channel-card__arrow { transform: translate(3px,-3px); }
 .channel-card[aria-disabled="true"] { cursor: pointer; }
 .channel-card.is-unconfigured:hover { background: #161411; }
